@@ -20,6 +20,10 @@ from langchain.memory import StreamlitChatMessageHistory
 TMP_DIR = Path(__file__).resolve().parent.parent.joinpath('data','tmp')
 LOCAL_VECTOR_STORE_DIR = Path(__file__).resolve().parent.parent.joinpath('data', 'vector_store')
 
+# Tạo các thư mục nếu chúng không tồn tại
+TMP_DIR.mkdir(parents=True, exist_ok=True)
+LOCAL_VECTOR_STORE_DIR.mkdir(parents=True, exist_ok=True)
+
 header = st.container()
 
 def streamlit_ui():

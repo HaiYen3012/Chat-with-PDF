@@ -24,13 +24,13 @@ header = st.container()
 
 def streamlit_ui():
     with st.sidebar:
-        choice = option_menu('Table of contents', ['Home', 'Chat with document/RAG'])
+        choice = option_menu('Table of contents', ['Home', 'Chat with PDF/RAG'])
     if choice == 'Home':
         RAG_HOME()
 
-    elif choice == 'Chat with document/RAG':
+    elif choice == 'Chat with PDF/RAG':
         with header:
-            st.title('Chat with document/RAG')
+            st.title('Chat with PDF/RAG')
             st.write('Upload a document that you want to chat')
             source_docs = st.file_uploader(label="Upload a document", type=['pdf'],accept_multiple_files=True)
             if not source_docs:
@@ -102,7 +102,7 @@ def set_send_input():
     clear_input_field()
 
 def RAG_HOME():
-    st.title("Multimodal Local Chat App")
+    st.title("CHAT WITH AI ASSISTANT")
     chat_container = st.container()
 
     if "send_input" not in st.session_state:
@@ -112,7 +112,7 @@ def RAG_HOME():
     chat_history = StreamlitChatMessageHistory(key="history")
     llm_chain = load_chain(chat_history)
 
-    user_input = st.text_input("Type your message here", key="user_input", on_change=set_send_input)
+    user_input = st.text_input("Write your message here", key="user_input", on_change=set_send_input)
 
     send_button = st.button("Send", key="send_button")
 

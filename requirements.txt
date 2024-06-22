@@ -1,0 +1,17 @@
+# pip3 install -r requirements.txt
+ctransformers
+InstructorEmbedding
+langchain
+langchain-community
+llama-cpp-python
+os
+PyMuPDF
+PyPDF2
+tempfile
+faiss-cpu
+unstructured
+unstructured[pdf]
+streamlit-option-menu
+sentence-transformers
+streamlit
+transformers

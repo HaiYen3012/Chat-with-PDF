@@ -86,9 +86,6 @@ Before proceeding, please obtain the ```base_url``` and ```base_url``` from LM S
   Here is a piece of content containing the answer to the question "What was the first State in Vietnam" in the uploaded PDF file:
   ![dtb10.png](picture/dtb10.png)
 
-## Video demo
-
-
 ## References
 * [Connecting the model from LM Studio](https://www.youtube.com/watch?v=olscAhDZFLM)
 * [Chatbot Development](https://github.com/Leon-Sander/local_multimodal_ai_chat/tree/main)

@@ -39,9 +39,9 @@ The Memory Builder component processes PDFs from the docs folder, breaking them 
 To install clone the repository and follow these simple steps:
 1. **Virtual Environment**: ```Python 3.12.3```
 2. **Install Requirements**: 
-  ```sh
-  pip install -r requirements.txt
-  ```
+   ```sh
+   pip install -r requirements.txt
+   ```
 3. **Download LM Studio suitable for your device**: ```https://lmstudio.ai/```
 4. **Use the PDF file**: You can use the PDF document in the data directory. Alternatively, if you want to use another PDF file, please move that PDF file into the data directory of CHATBOT-RAG.
 5. **Enter commands in terminal to interact with a GUI**:

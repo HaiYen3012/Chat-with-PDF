@@ -1,19 +1,19 @@
-# CHATBOT-RAG
+# CHAT WITH PDF
 
-CHATBOT-RAG is a project aimed at developing intelligent chatbots capable of conversing and performing automated tasks. The project consists of two main chatbots:
+CHAT WITH PDF is a project aimed at developing intelligent chatbots capable of conversing and performing automated tasks. The project consists of two main chatbots:
 
 1. **Basic Chatbot**: This chatbot can answer frequently asked questions and perform automated tasks based on predefined programming rules.
 2. **Document-based Chatbot**: This advanced chatbot is capable of conversing about information extracted from user-provided documents, typically in PDF format. It utilizes AI technology and natural language processing to understand and extract information from the documents, enabling it to answer specific questions related to the content of the documents.
 
 ## Table of Contents
 
-- [CHATBOT-RAG](#chatbot-rag)
+- [CHAT WITH PDF](#chat-with-pdf)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Features](#features)
   - [Installation](#installation)
   - [Using the LM Studio](#using-the-lm-studio)
-  - [Run the CHATBOT-RAG](#run-the-chatbot-rag)
+  - [Run the project](#run-the-project)
   - [Video demo](#video-demo)
   - [References](#references)
 
@@ -43,7 +43,7 @@ To install clone the repository and follow these simple steps:
    pip install -r requirements.txt
    ```
 3. **Download LM Studio suitable for your device**: ```https://lmstudio.ai/```
-4. **Use the PDF file**: You can use the PDF document in the data directory. Alternatively, if you want to use another PDF file, please move that PDF file into the data directory of CHATBOT-RAG.
+4. **Use the PDF file**: You can use the PDF document in the data directory. Alternatively, if you want to use another PDF file, please move that PDF file into the data directory of CHAT WITH PDF.
 5. **Enter commands in terminal to interact with a GUI**:
    ```sh
    streamlit run .\Streamlit_RAG.py
@@ -58,7 +58,7 @@ LM Studio supports the use of the following models such as:
 * ONNX Models
 * TensorFlow and PyTorch Models
 
-To use LM Studio for CHATBOT-RAG, follow these steps:
+To use LM Studio for CHAT WITH PDF, follow these steps:
 1. **Step1**: After downloading LM Studio to your computer, open the interface
 
    ![dtb2.png](picture/dtb2.png)
@@ -69,7 +69,7 @@ To use LM Studio for CHATBOT-RAG, follow these steps:
 
    ![dtb4.png](picture/dtb4.png)
 
-In this way, you have completed installing LM Studio and the model to run CHATBOT-RAG.
+In this way, you have completed installing LM Studio and the model to run the project.
 
 Before proceeding, please obtain the ```base_url``` and ```base_url``` from LM Studio on your computer and replace .`\Streamlit_RAG` as follows:
 
@@ -78,7 +78,7 @@ Before proceeding, please obtain the ```base_url``` and ```base_url``` from LM S
   llm = ChatOpenAI(base_url="<YOUR-BASE-URL>", api_key="<YOUR-API-KEY>")
 ```
 
-## Run the CHATBOT-RAG
+## Run the project
 * Interface of Chatbot:
 
   ![dtb5.png](picture/dtb5.png)
